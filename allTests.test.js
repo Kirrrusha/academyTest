@@ -46,4 +46,13 @@ describe('Random Integer', () => {
       randomIntInInterval.randomInteger(10, 20)
     ).toBe(15);
   });
+
+  it('it is not Integer input value', () => {
+    console.log(randomIntInInterval.randomNumber(10.5, 20))
+    // expect(
+    //   randomIntInInterval.randomInteger(10.5, 20).min
+    // ).not.toBe(15);
+    // if (!Number.isInteger(min) && !Number.isInteger(min))
+    // alert('Одно из чисел не Integer');
+  })
 });
